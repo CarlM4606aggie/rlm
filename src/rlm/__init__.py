@@ -5,6 +5,10 @@ learning techniques, including RLHF, PPO, and reward modeling.
 
 Note: Personal fork for experimenting with RLHF on smaller LLMs.
 See alexzhang13/rlm for the upstream project.
+
+Fork notes:
+- Primarily testing on GPT-2 and small open-source models
+- Focus on low-resource RLHF (single GPU, <16GB VRAM)
 """
 
 __version__ = "0.1.0"
