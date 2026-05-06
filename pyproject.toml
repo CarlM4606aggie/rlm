@@ -60,12 +60,13 @@ Issues = "https://github.com/alexzhang13/rlm/issues"
 where = ["src"]
 
 [tool.black]
-line-length = 100
+# Personal preference: using 88 (black's default) instead of 100
+line-length = 88
 target-version = ["py39", "py310", "py311"]
 
 [tool.isort]
 profile = "black"
-line_length = 100
+line_length = 88
 
 [tool.mypy]
 python_version = "3.9"
