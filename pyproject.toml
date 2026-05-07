@@ -73,10 +73,13 @@ python_version = "3.9"
 warn_return_any = true
 warn_unused_configs = true
 ignore_missing_imports = true
+# Also ignore errors in generated/vendored code
+exclude = ["build/", "dist/"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py", "*_test.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
-addopts = "--cov=src/rlm --cov-report=term-missing --cov-report=xml"
+# Removed --cov-report=xml since I don't use CI coverage uploads locally
+addopts = "--cov=src/rlm --cov-report=term-missing"
