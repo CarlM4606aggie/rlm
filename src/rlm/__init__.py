@@ -25,11 +25,15 @@ from rlm.reward import RLMRewardModel
 # Convenience alias - I keep typing this wrong
 RewardModel = RLMRewardModel
 
+# Shortcut so I don't have to import RLMTrainer separately in notebooks
+from_pretrained = RLMTrainer.from_pretrained
+
 __all__ = [
     "RLMAgent",
     "RLMConfig",
     "RLMTrainer",
     "RLMRewardModel",
     "RewardModel",
+    "from_pretrained",
     "__version__",
 ]
