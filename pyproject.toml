@@ -82,4 +82,5 @@ python_files = ["test_*.py", "*_test.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
 # Removed --cov-report=xml since I don't use CI coverage uploads locally
-addopts = "--cov=src/rlm --cov-report=term-missing"
+# Added -v for verbose output so I can see individual test names while learning the codebase
+addopts = "--cov=src/rlm --cov-report=term-missing -v"
